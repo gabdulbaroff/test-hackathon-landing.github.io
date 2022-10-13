@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0c03675-ea4d-4f3c-9044-96a0d99c07f2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/almaz/OneDrive/Документы/fls/test-hackathon-landing.github.io",
+    "last_opened_file_path": "C:/Users/almaz/OneDrive/Документы/fls/hackaton-landing-news",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -34,6 +37,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io" />
+      <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\1" />
@@ -47,7 +51,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665680464772</updated>
-      <workItem from="1665680466458" duration="307000" />
+      <workItem from="1665680466458" duration="1650000" />
+      <workItem from="1665682287659" duration="8928000" />
     </task>
     <servers />
   </component>

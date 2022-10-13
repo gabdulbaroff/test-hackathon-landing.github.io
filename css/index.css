@@ -1,0 +1,10 @@
+@import './fonts.css';
+
+@import './general.css';
+
+@import './main.css';
+
+/* pages */
+@import './pages/index.css';
+@import './pages/buy.css';
+@import './pages/games.css';

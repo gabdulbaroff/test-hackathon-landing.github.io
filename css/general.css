@@ -1,0 +1,342 @@
+body {
+    background-color: #000;
+    color: #818186;
+    /*background: url(../assets/img/background.png) no-repeat center center fixed;*/
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+.navbar {
+  margin-top: 10px;
+}
+
+.nav-item {
+margin-left: 20px;
+}
+
+.navbar-nav button, .navbar-button {
+margin-left: 25px;
+margin-right: 13px;
+padding: 3px 28px;
+font-weight: 300 !important;
+font-size: 0.9rem;
+}
+
+.btn{
+  background-color:#434346;
+  font-weight: 500;
+  border-radius: 0px;
+}
+
+.btn.btn-primary {
+  /*background-color: rgba(3, 179, 249, 0.7);*/
+    background-color: #f18606;
+    /*border: 2px solid #03B3F9;*/
+    border: 2px solid #f18606;
+  }
+  .btn.text-white {
+    margin: 0 15px;
+  }
+  span {
+    /*color:#03B3F9;*/
+    color: #f18606;
+  }
+  
+  table {
+    border-radius: 4px;
+  }
+  
+  thead {
+    background: #313133;
+    border: 1px solid rgba(246, 246, 255, 0.11);
+  }
+  tr td:nth-child(2) {
+    background: #262628;
+  }
+  th {
+    border: none;
+    font-weight: 500;
+  }
+  th:nth-child(n+3) {
+    font-weight: 300;
+  }
+  td {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: transparent;
+    border: 1px solid #333335;
+  }
+  td img {
+    width: 15px;
+  }
+  
+  .bi.bi-dot {
+    width: 28px;
+    height: 28px;
+    margin: -11px;
+  }
+  
+  header.masthead {
+    text-transform: uppercase;
+    padding-top: 10.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 25px;
+    font-family: "Poppins-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #818186
+  }
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 0.75rem;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .masthead-subtitle {
+    font-size: 1.7rem;
+    /*font-size: 1.2rem;*/
+    line-height: 1.2rem;
+    margin-bottom: 25px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 10.5rem;
+      padding-bottom: 2rem;
+    }
+    header.masthead .masthead-subheading {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-bottom: 2rem;
+      color: #818186
+    }
+    .masthead-subtitle { 
+      /*font-size: 1.2rem;*/
+      line-height: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    header.masthead .masthead-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  
+  .card {
+    background-color: transparent;
+    border: 1px dotted rgba(246, 246, 255, 0.29); 
+    min-width: 23rem;
+    height: 9rem;
+    margin-bottom: 11rem;
+  }
+  
+  .card img {
+    width: 18rem;
+    margin-bottom: 8px;
+  }
+  
+  h6.card-title, h5.card-title {
+    margin-top: -25px;
+    margin-bottom: 30px;
+    /*font-size: 0.8rem;*/
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  h5.card-title {
+    margin-top: -30px;
+    font-size: 1.4rem;
+  }
+
+  h1.card-text {
+    font-weight: 600;
+  }
+
+  .form-select, .form-control {
+    background: rgba(246, 246, 255, 0.06);
+    border: 1px solid rgba(246, 246, 255, 0.23);
+  box-sizing: border-box;
+  border-radius: 4px;
+  }
+
+
+  .powerful, .incredible, .best, .sniffer, .lifetime, .addons, .reviews {
+    position: relative;
+    text-align: center;
+  }
+  
+  .powerful:after {
+    content: "Output";
+    opacity: 0.06;
+    position: relative;
+    font-size: 10vw;
+    top: -100px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: -1;
+    font-weight: 1000;
+  }
+
+  .incredible:after {
+    content: "ABOUT";
+    /*opacity: 0.025;*/
+    opacity: 0.06;
+    font-size: 10vw;
+    position: relative;
+    left: -350px;
+    top: 39px;
+    z-index: -1;
+    font-weight: 1000;
+  }
+
+  .best {
+    margin-top: 100px;
+    /*opacity: 0.025 !important;*/
+    opacity: 0.06 !important;
+    font-size: 11vw;
+    text-align: center;
+    font-weight: 1000;
+  }
+
+  .lifetime {
+    margin-bottom: -80px;
+    opacity: 0.025 !important;
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 1000;
+  }
+
+  .sniffer:after {
+    content: "HACKATON";
+    filter:blur(4px);
+    /*opacity: 0.05;*/
+    opacity: 0.07;
+    font-size: 11vw;
+    position: absolute;
+    top: 0;
+    /*left: 18%;*/
+    left: 12%;
+    z-index: -1;
+  }
+
+  .addons:after {
+    content: "ADDONS";
+    opacity: 0.025;
+    font-size: 9vw;
+    position: absolute;
+    bottom: -170%;
+    left: 27%;
+    z-index: -1;
+    font-weight: 1000;
+  }
+
+  .reviews:after {
+    content: "REVIEWS";
+    opacity: 0.025;
+    font-size: 9vw;
+    position: absolute;
+    bottom: -180%;
+    left: 26%;
+    z-index: -1;
+    font-weight: 1000;
+  }
+
+.hover-zoom {
+  font-size: 1.1rem;
+  transition: .3s transform
+  cubic-bezier(.155,1.105,.295,1.12),.3s
+  box-shadow,.3s
+  -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+cursor: pointer;
+}
+
+.hover-zoom span {
+  display: contents;
+}
+
+.hover-zoom:hover{
+ transform: scale(1.03) !important;
+}
+
+.btn {
+  transition: all 0.4s;
+  transition-timing-function:cubic-bezier(0.5, 3, 0, 1);
+}
+
+.btn:hover{
+  transform:scale(1.05,1.05) !important;
+  opacity: 1;
+}
+
+
+@media (max-width: 990px) {
+  .navbar-nav button {
+    margin-top: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .navbar {
+    margin-top: 0px;
+    background: #000;
+    /*transition: background 2s, opacity 2s;*/
+    /*background: #19191A;*/
+  }
+  nav {
+    /*opacity: 0.9;*/
+  }
+
+  nav:has(div.show) {
+    background: #131313;
+    /*background: #262627;*/
+    /*background: #000;*/
+    /*opacity: 0.9;*/
+    /*background: #19191A;*/
+    /*background: #f18606;*/
+    transition: background 2s, opacity 2s;
+    /*color: #fff;*/
+    /*transition: width 2s, height 2s, background 2s, transform 2s;*/
+  }
+  /*div.show .navbar-dark .navbar-nav .nav-link {*/
+  /*  color: #fff !important;*/
+  /*}*/
+
+  .navbar-collapse {
+    padding-bottom: 10px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .powerful:after, .incredible:after, .best:after, .best, .sniffer:after, .lifetime:after, .addons:after, .reviews:after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .powerful:after, .incredible:after, .best:after, .sniffer:after, .lifetime:after, .addons:after, .reviews:after {
+    display: none;
+  }
+}
+
+select option{
+  background-color: #19191A;
+}
+
+
+@media screen and (max-width: 600px) {
+  section.incredible-features-section {
+    /*margin-top: 5rem;*/
+    margin-top: 10rem;
+    /*margin-top: 35rem;*/
+  }
+}
+}
