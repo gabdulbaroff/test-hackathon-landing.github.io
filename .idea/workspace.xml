@@ -26,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/almaz/OneDrive/Документы/fls/hackaton-landing",
+    "last_opened_file_path": "C:/Users/almaz/OneDrive/Документы/fls/test-hackathon-landing.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1665680464772</updated>
       <workItem from="1665680466458" duration="1650000" />
-      <workItem from="1665682287659" duration="15778000" />
+      <workItem from="1665682287659" duration="17765000" />
+      <workItem from="1666004124521" duration="365000" />
     </task>
     <servers />
   </component>
