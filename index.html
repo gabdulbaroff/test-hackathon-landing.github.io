@@ -21,6 +21,10 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
   <style>
+    .judges-section h3 {
+      margin-top: -105px;
+    }
+
     .news-gap {
       margin-bottom: 10rem;
     }
@@ -39,12 +43,23 @@
     }
 
     @media (max-width: 540px) {
+      /*.powerful-features-section {*/
+      /*  margin-bottom: -200px;*/
+      /*}*/
+      .judges-section {
+        margin-top: 200px;
+      }
+
       .carousel-control-prev, .carousel-control-next {
         margin-top: 231px;
       }
 
       .carousel-inner {
         width: 70%;
+      }
+
+      .judges-section .carousel-inner {
+        width: 90%;
       }
 
       .powerful-features-section {
@@ -73,6 +88,31 @@
 
       .about-gap {
         margin-bottom: 10rem;
+      }
+
+      .judges-section .card {
+        min-width: 12rem;
+      }
+
+      .judges-section {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .judges-section .judges-container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .judges-container > .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+
+      .judges-section h3 {
+        margin-top: 185px;
       }
     }
 
@@ -125,6 +165,9 @@
       border-bottom: solid 1px #032a63;
     }
     @media (max-width: 999px) {
+      .judges-section {
+        margin-top: 400px;
+      }
       .banner-content h1 {
         font-size: 18px;
         padding-left: 12px;
@@ -138,6 +181,17 @@
     .rotate-img {
       overflow: hidden;
     }
+
+    @media (max-width: 540px) {
+      .powerful-features-section {
+        margin-bottom: 500px;
+      }
+
+      .judges-section {
+        margin-top: 200px;
+      }
+    }
+
 
     .rotate-img img {
     /*img {*/
@@ -157,6 +211,55 @@
     .rotate-img img:hover {
       -webkit-transform: rotate(15deg) scale(1.4);
       transform: rotate(15deg) scale(1.4);
+    }
+
+    .card-judge {
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    }
+
+    .card-judge {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #000;
+      background-clip: border-box;
+      border: 0 solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+    }
+
+    .card-body-judge {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1rem;
+    }
+
+    .gutters-sm {
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+
+    .gutters-sm>.col, .gutters-sm>[class*=col-] {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .mb-3, .my-3 {
+      margin-bottom: 1rem!important;
+    }
+
+    .bg-gray-300 {
+      background-color: #000;
+    }
+    .h-100 {
+      height: 100%!important;
+    }
+    .shadow-none {
+      box-shadow: none!important;
+    }
+
+    .avatar {
+      border: 2px solid #fff;
     }
   </style>
 </head>
@@ -179,6 +282,7 @@
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">News</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#output">Reasons to join</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#judges">Judges</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#get-started">Get Started</a></li>
         <!--                    <button class="btn btn-primary ml-3" type="button">-->
         <!--                        Try it for FREE-->
@@ -264,7 +368,7 @@
             <span>First Hackathon – First you</span>
           </h6>
           <p class="card-text d-flex justify-content-center">
-            Registration is already <span>closed!</span>
+            Registration is already <span>closed</span>!
 <!--            Registration is already open it will last until <span>October 05</span>!-->
             If you don’t have an idea for development - no problem, we will help you find it!
             <!--                          <img src="./assets/img/consoles.svg" alt="">-->
@@ -475,6 +579,184 @@
     </div>
   </section>
 <!--  <div id="get-started"  ></div>-->
+  <section id="judges" class="judges-section"  style="margin-bottom: 0px;">
+  <div class="container">
+    <div class="row justify-content-center mt-5 mb-5    ">
+      <h1 class="best text-center text-white fade-in">JUDGES</span></h1>
+      <h3 class="text-center text-white mb-5 slide-in from-right">
+        <!--                            style="margin-top: -115px;"-->
+        <!--                        >-->
+        Our <span>Judges</span></h3>
+    </div>
+    <!--                <div class="row justify-content-around">-->
+    <!--                    <h3 class="text-white slide-in from-top incredible">-->
+    <!--                        <span>Reasons</span> to join-->
+    <!--                    </h3>-->
+    <!--                </div>-->
+    <div class="container d-flex justify-content-around flex-wrap judges-container" >
+<!--         style="width: 90%; margin-top: -70px;" >-->
+      <div class="container">
+        <div class="main-body">
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="margin: auto">
+              <div class="carousel-item active">
+                <div class="row gutters-sm">
+<!--                     style="margin-bottom: 200px;">-->
+                  <div class="col-md-4 mb-3">
+                    <div class="card card-judge">
+                      <div class="card-body card-body-judge">
+                        <div class="d-flex flex-column align-items-center text-center">
+                          <img src="assets/img/VeliborMiranović.jpg" alt="Admin" class="rounded-circle avatar" style="width: 15rem;">
+                          <div class="mt-3">
+                            <h4 class="text-white font-weight-normal">Velibor Miranović</h4>
+                            <p class="text-secondary mb-1"> Development Lead at <span>Amplitudo</span></p>
+<!--                            <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
+                            <!--                      <button class="btn btn-primary">Follow</button>-->
+                            <!--                      <button class="btn btn-outline-primary">Message</button>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8" style="margin-top: 25px; margin-bottom: 250px;">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <div role="tabpanel" class="tab-pane" id="tab-item-3">
+                          <p>Hi. My name is Velibor Miranović, Development Lead at <span>Amplitudo</span>. I'm a software engineer with very dynamic career which has started back in 2014. Most interesting part for all of you would by my engagement with startups and innovative tech products. That's what I do in Amplitudo and I hope my expertise will contribute to the hackaton. </p>
+                          <p>I expect to see some fresh ideas there, as well as to meet young and talented people. What I'm sure is that we're all going to have a great time.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row gutters-sm">
+<!--                     style="margin-bottom: 200px;">-->
+                  <div class="col-md-4 mb-3">
+                    <div class="card card-judge">
+                      <div class="card-body card-body-judge">
+                        <div class="d-flex flex-column align-items-center text-center">
+                          <img src="assets/img/IvanaSreckovic.jpg" alt="Admin" class="rounded-circle avatar" style="width: 15rem;">
+                          <div class="mt-3">
+                            <h4 class="text-white font-weight-normal">Ivana Sreckovic</h4>
+                            <p class="text-secondary mb-1">Media Specialist</p>
+<!--                            <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
+                            <!--                      <button class="btn btn-primary">Follow</button>-->
+                            <!--                      <button class="btn btn-outline-primary">Message</button>-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8" style="margin-bottom: 850px;">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <div role="tabpanel" class="tab-pane" id="tab-item-3">
+                          <p>Ivana Sreckovic is an accomplished Media Specialist with a track record of success in the Media, Public Relations, and Marketing industries. She has more than ten years of experience in several fields, including Business, Event and Project Management, Public Speaking, Media Relations, Social Media Management, and Human Rights Protection.
+                            Her current engagements include working as the General Manager of <span>NEST Coworking space</span> in Podgorica, Montenegro, as well as obtaining the Climate-KIC license for organizing the only local Climathon event in Montenegro and the Design Battlefield license for organizing the country's first hackathon event for designers. She has volunteered for two TEDx events in London and is a former license holder and organizer of TEDxPodgorica. Since 2020 Ivana is also part of the network of Young European Ambassadors for the Western Balkan region.</p>
+                          <p>
+                            Overall, she is an experienced media and communication professional with a Bachelor's degree from the Faculty of Political Science/Journalism Department at the University of Montenegro with a one-year long exchange program at Minnesota, USA, as well as a Chevening scholarship holder with an MA Marketing Communications degree from the University of Westminster in London.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--                  <div class="carousel-item">-->
+              <!--                    <div class="feed d-flex pb-4 pt-5 align-items-center justify-content-between">-->
+              <!--                      <div class="feed-date col-lg-2"><span style="font-size: 2.6rem">2 Oct.</span></div>-->
+              <!--                      <div class="feed-text">-->
+              <!--                        <h4 class="text-white" style="font-weight: 500">We are happy to tell you that today we open registration for the hackathon</h4>-->
+              <!--                        <div style="color: #818186">-->
+              <!--                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Ut <span>enim ad</span> minim veniam, quis nostrud exercitation.-->
+              <!--                        </div>-->
+              <!--                      </div>-->
+              <!--                    </div>-->
+              <!--                  </div>-->
+              <!--                  <div class="carousel-item">-->
+              <!--                    <img src="..." class="d-block w-100" alt="...">-->
+              <!--                  </div>-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+              <!--                        style="margin-top: 28px;"-->
+              <!--                >-->
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+              <!--                        style="margin-top: 28px;">-->
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+<!--          <div class="row gutters-sm" style="margin-bottom: 200px;">-->
+<!--            <div class="col-md-4 mb-3">-->
+<!--              <div class="card card-judge">-->
+<!--                <div class="card-body card-body-judge">-->
+<!--                  <div class="d-flex flex-column align-items-center text-center">-->
+<!--                    <img src="assets/img/VeliborMiranović.jpg" alt="Admin" class="rounded-circle avatar" style="width: 15rem;">-->
+<!--                    <div class="mt-3">-->
+<!--                      <h4 class="text-white">Velibor Miranović</h4>-->
+<!--                      <p class="text-secondary mb-1"> Development Lead at <span>Amplitudo</span></p>-->
+<!--                      <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
+<!--&lt;!&ndash;                      <button class="btn btn-primary">Follow</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                      <button class="btn btn-outline-primary">Message</button>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-8">-->
+<!--              <div class="card mb-3">-->
+<!--                <div class="card-body">-->
+<!--                  <div role="tabpanel" class="tab-pane" id="tab-item-3">-->
+<!--                    <p>Hi. My name is Velibor Miranović, Development Lead at Amplitudo. I'm a software engineer with very dynamic career which has started back in 2014. Most interesting part for all of you would by my engagement with startups and innovative tech products. That's what I do in Amplitudo and I hope my expertise will contribute to the hackaton. </p>-->
+<!--                    <p>I expect to see some fresh ideas there, as well as to meet young and talented people. What I'm sure is that we're all going to have a great time.</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="row gutters-sm"  style="margin-bottom: 200px;">-->
+<!--            <div class="col-md-4 mb-3">-->
+<!--              <div class="card card-judge">-->
+<!--                <div class="card-body card-body-judge">-->
+<!--                  <div class="d-flex flex-column align-items-center text-center">-->
+<!--                    <img src="assets/img/IvanaSreckovic.jpg" alt="Admin" class="rounded-circle avatar" style="width: 15rem;">-->
+<!--                    <div class="mt-3">-->
+<!--                      <h4 class="text-white">Ivana Sreckovic</h4>-->
+<!--                      <p class="text-secondary mb-1">Media Specialist</p>-->
+<!--                      <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>-->
+<!--                      &lt;!&ndash;                      <button class="btn btn-primary">Follow</button>&ndash;&gt;-->
+<!--                      &lt;!&ndash;                      <button class="btn btn-outline-primary">Message</button>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-8">-->
+<!--              <div class="card mb-3">-->
+<!--                <div class="card-body">-->
+<!--                  <div role="tabpanel" class="tab-pane" id="tab-item-3">-->
+<!--                    <p>Ivana Sreckovic is an accomplished Media Specialist with a track record of success in the Media, Public Relations, and Marketing industries. She has more than ten years of experience in several fields, including Business, Event and Project Management, Public Speaking, Media Relations, Social Media Management, and Human Rights Protection.-->
+<!--                      Her current engagements include working as the General Manager of NEST Coworking space in Podgorica, Montenegro, as well as obtaining the Climate-KIC license for organizing the only local Climathon event in Montenegro and the Design Battlefield license for organizing the country's first hackathon event for designers. She has volunteered for two TEDx events in London and is a former license holder and organizer of TEDxPodgorica. Since 2020 Ivana is also part of the network of Young European Ambassadors for the Western Balkan region.</p>-->
+<!--                    <p>-->
+<!--                      Overall, she is an experienced media and communication professional with a Bachelor's degree from the Faculty of Political Science/Journalism Department at the University of Montenegro with a one-year long exchange program at Minnesota, USA, as well as a Chevening scholarship holder with an MA Marketing Communications degree from the University of Westminster in London.</p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <div class="get-started-gap row justify-content-center">
     <div id="get-started"></div>
   </div>
