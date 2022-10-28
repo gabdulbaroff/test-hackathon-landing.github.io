@@ -84,7 +84,6 @@
   }
   .works-for-section .card, .get-started-section .card {
     min-width: 20rem;
-    /*height: 14;*/
   }
   .card a {
     font-size: 0.75rem;
@@ -92,5 +91,6 @@
   .get-started-section .card-body {
     width: 90%;
   }
+
 }
 
