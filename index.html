@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/favicon-16x16.png">
@@ -384,7 +384,369 @@
       }
     }
 
+    body{
+      /*background-color:#eee;*/
+      margin-top:20px;
+    }
 
+    .list-timeline {
+      margin: 0;
+      padding: 5px 0;
+      position: relative
+    }
+
+    .list-timeline:before {
+      width: 1px;
+      background: #ccc;
+      position: absolute;
+      left: 6px;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      content: ''
+    }
+
+    .list-timeline .list-timeline-item {
+      margin: 0;
+      padding: 0;
+      padding-left: 24px !important;
+      position: relative
+    }
+
+    .list-timeline .list-timeline-item:before {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: 2px solid #ccc;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      content: '';
+      border-radius: 100%;
+      -webkit-transition: all .3 ease-in-out;
+      transition: all .3 ease-in-out
+    }
+
+    .selected-timeline-item:before {
+      background: #f18606 !important;
+    }
+
+    .list-timeline .list-timeline-item[data-toggle=collapse] {
+      cursor: pointer
+    }
+
+    .list-timeline .list-timeline-item.active:before,
+    .list-timeline .list-timeline-item.show:before {
+      background: #ccc
+    }
+
+    .list-timeline.list-timeline-light .list-timeline-item.active:before,
+    .list-timeline.list-timeline-light .list-timeline-item.show:before,
+    .list-timeline.list-timeline-light:before {
+      background: #f8f9fa
+    }
+
+    .list-timeline .list-timeline-item.list-timeline-item-marker-middle:before {
+      top: 50%;
+      margin-top: -6px
+    }
+
+    .list-timeline.list-timeline-light .list-timeline-item:before {
+      border-color: #f8f9fa
+    }
+
+    .list-timeline.list-timeline-grey .list-timeline-item.active:before,
+    .list-timeline.list-timeline-grey .list-timeline-item.show:before,
+    .list-timeline.list-timeline-grey:before {
+      background: #e9ecef
+    }
+
+    .list-timeline.list-timeline-grey .list-timeline-item:before {
+      border-color: #e9ecef
+    }
+
+    .list-timeline.list-timeline-grey-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-grey-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-grey-dark:before {
+      background: #495057
+    }
+
+    .list-timeline.list-timeline-grey-dark .list-timeline-item:before {
+      border-color: #495057
+    }
+
+    .list-timeline.list-timeline-primary .list-timeline-item.active:before,
+    .list-timeline.list-timeline-primary .list-timeline-item.show:before,
+    .list-timeline.list-timeline-primary:before {
+      /*background: #55A79A;*/
+      /*background: #fff;*/
+      background: #f18606;
+    }
+
+    .list-timeline.list-timeline-primary .list-timeline-item:before {
+      /*border-color: #55A79A;*/
+      border-color: #f18606;
+    }
+
+    .list-timeline.list-timeline-primary-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-primary-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-primary-dark:before {
+      background: #33635c
+    }
+
+    .list-timeline.list-timeline-primary-dark .list-timeline-item:before {
+      border-color: #33635c
+    }
+
+    .list-timeline.list-timeline-primary-faded .list-timeline-item.active:before,
+    .list-timeline.list-timeline-primary-faded .list-timeline-item.show:before,
+    .list-timeline.list-timeline-primary-faded:before {
+      background: rgba(85, 167, 154, .3)
+    }
+
+    .list-timeline.list-timeline-primary-faded .list-timeline-item:before {
+      border-color: rgba(85, 167, 154, .3)
+    }
+
+    .list-timeline.list-timeline-info .list-timeline-item.active:before,
+    .list-timeline.list-timeline-info .list-timeline-item.show:before,
+    .list-timeline.list-timeline-info:before {
+      background: #17a2b8
+    }
+
+    .list-timeline.list-timeline-info .list-timeline-item:before {
+      border-color: #17a2b8
+    }
+
+    .list-timeline.list-timeline-success .list-timeline-item.active:before,
+    .list-timeline.list-timeline-success .list-timeline-item.show:before,
+    .list-timeline.list-timeline-success:before {
+      background: #28a745
+    }
+
+    .list-timeline.list-timeline-success .list-timeline-item:before {
+      border-color: #28a745
+    }
+
+    .list-timeline.list-timeline-warning .list-timeline-item.active:before,
+    .list-timeline.list-timeline-warning .list-timeline-item.show:before,
+    .list-timeline.list-timeline-warning:before {
+      background: #ffc107
+    }
+
+    .list-timeline.list-timeline-warning .list-timeline-item:before {
+      border-color: #ffc107
+    }
+
+    .list-timeline.list-timeline-danger .list-timeline-item.active:before,
+    .list-timeline.list-timeline-danger .list-timeline-item.show:before,
+    .list-timeline.list-timeline-danger:before {
+      background: #dc3545
+    }
+
+    .list-timeline.list-timeline-danger .list-timeline-item:before {
+      border-color: #dc3545
+    }
+
+    .list-timeline.list-timeline-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-dark:before {
+      background: #343a40
+    }
+
+    .list-timeline.list-timeline-dark .list-timeline-item:before {
+      border-color: #343a40
+    }
+
+    .list-timeline.list-timeline-secondary .list-timeline-item.active:before,
+    .list-timeline.list-timeline-secondary .list-timeline-item.show:before,
+    .list-timeline.list-timeline-secondary:before {
+      background: #6c757d
+    }
+
+    .list-timeline.list-timeline-secondary .list-timeline-item:before {
+      border-color: #6c757d
+    }
+
+    .list-timeline.list-timeline-black .list-timeline-item.active:before,
+    .list-timeline.list-timeline-black .list-timeline-item.show:before,
+    .list-timeline.list-timeline-black:before {
+      background: #000
+    }
+
+    .list-timeline.list-timeline-black .list-timeline-item:before {
+      border-color: #000
+    }
+
+    .list-timeline.list-timeline-white .list-timeline-item.active:before,
+    .list-timeline.list-timeline-white .list-timeline-item.show:before,
+    .list-timeline.list-timeline-white:before {
+      background: #fff
+    }
+
+    .list-timeline.list-timeline-white .list-timeline-item:before {
+      border-color: #fff
+    }
+
+    .list-timeline.list-timeline-green .list-timeline-item.active:before,
+    .list-timeline.list-timeline-green .list-timeline-item.show:before,
+    .list-timeline.list-timeline-green:before {
+      background: #55A79A
+    }
+
+    .list-timeline.list-timeline-green .list-timeline-item:before {
+      border-color: #55A79A
+    }
+
+    .list-timeline.list-timeline-red .list-timeline-item.active:before,
+    .list-timeline.list-timeline-red .list-timeline-item.show:before,
+    .list-timeline.list-timeline-red:before {
+      background: #BE3E1D
+    }
+
+    .list-timeline.list-timeline-red .list-timeline-item:before {
+      border-color: #BE3E1D
+    }
+
+    .list-timeline.list-timeline-blue .list-timeline-item.active:before,
+    .list-timeline.list-timeline-blue .list-timeline-item.show:before,
+    .list-timeline.list-timeline-blue:before {
+      background: #00ADBB
+    }
+
+    .list-timeline.list-timeline-blue .list-timeline-item:before {
+      border-color: #00ADBB
+    }
+
+    .list-timeline.list-timeline-purple .list-timeline-item.active:before,
+    .list-timeline.list-timeline-purple .list-timeline-item.show:before,
+    .list-timeline.list-timeline-purple:before {
+      background: #b771b0
+    }
+
+    .list-timeline.list-timeline-purple .list-timeline-item:before {
+      border-color: #b771b0
+    }
+
+    .list-timeline.list-timeline-pink .list-timeline-item.active:before,
+    .list-timeline.list-timeline-pink .list-timeline-item.show:before,
+    .list-timeline.list-timeline-pink:before {
+      background: #CC164D
+    }
+
+    .list-timeline.list-timeline-pink .list-timeline-item:before {
+      border-color: #CC164D
+    }
+
+    .list-timeline.list-timeline-orange .list-timeline-item.active:before,
+    .list-timeline.list-timeline-orange .list-timeline-item.show:before,
+    .list-timeline.list-timeline-orange:before {
+      background: #e67e22
+    }
+
+    .list-timeline.list-timeline-orange .list-timeline-item:before {
+      border-color: #e67e22
+    }
+
+    .list-timeline.list-timeline-lime .list-timeline-item.active:before,
+    .list-timeline.list-timeline-lime .list-timeline-item.show:before,
+    .list-timeline.list-timeline-lime:before {
+      background: #b1dc44
+    }
+
+    .list-timeline.list-timeline-lime .list-timeline-item:before {
+      border-color: #b1dc44
+    }
+
+    .list-timeline.list-timeline-blue-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-blue-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-blue-dark:before {
+      background: #34495e
+    }
+
+    .list-timeline.list-timeline-blue-dark .list-timeline-item:before {
+      border-color: #34495e
+    }
+
+    .list-timeline.list-timeline-red-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-red-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-red-dark:before {
+      background: #a10f2b
+    }
+
+    .list-timeline.list-timeline-red-dark .list-timeline-item:before {
+      border-color: #a10f2b
+    }
+
+    .list-timeline.list-timeline-brown .list-timeline-item.active:before,
+    .list-timeline.list-timeline-brown .list-timeline-item.show:before,
+    .list-timeline.list-timeline-brown:before {
+      background: #91633c
+    }
+
+    .list-timeline.list-timeline-brown .list-timeline-item:before {
+      border-color: #91633c
+    }
+
+    .list-timeline.list-timeline-cyan-dark .list-timeline-item.active:before,
+    .list-timeline.list-timeline-cyan-dark .list-timeline-item.show:before,
+    .list-timeline.list-timeline-cyan-dark:before {
+      background: #008b8b
+    }
+
+    .list-timeline.list-timeline-cyan-dark .list-timeline-item:before {
+      border-color: #008b8b
+    }
+
+    .list-timeline.list-timeline-yellow .list-timeline-item.active:before,
+    .list-timeline.list-timeline-yellow .list-timeline-item.show:before,
+    .list-timeline.list-timeline-yellow:before {
+      background: #D4AC0D
+    }
+
+    .list-timeline.list-timeline-yellow .list-timeline-item:before {
+      border-color: #D4AC0D
+    }
+
+    .list-timeline.list-timeline-slate .list-timeline-item.active:before,
+    .list-timeline.list-timeline-slate .list-timeline-item.show:before,
+    .list-timeline.list-timeline-slate:before {
+      background: #5D6D7E
+    }
+
+    .list-timeline.list-timeline-slate .list-timeline-item:before {
+      border-color: #5D6D7E
+    }
+
+    .list-timeline.list-timeline-olive .list-timeline-item.active:before,
+    .list-timeline.list-timeline-olive .list-timeline-item.show:before,
+    .list-timeline.list-timeline-olive:before {
+      background: olive
+    }
+
+    .list-timeline.list-timeline-olive .list-timeline-item:before {
+      border-color: olive
+    }
+
+    .list-timeline.list-timeline-teal .list-timeline-item.active:before,
+    .list-timeline.list-timeline-teal .list-timeline-item.show:before,
+    .list-timeline.list-timeline-teal:before {
+      background: teal
+    }
+
+    .list-timeline.list-timeline-teal .list-timeline-item:before {
+      border-color: teal
+    }
+
+    .list-timeline.list-timeline-green-bright .list-timeline-item.active:before,
+    .list-timeline.list-timeline-green-bright .list-timeline-item.show:before,
+    .list-timeline.list-timeline-green-bright:before {
+      background: #2ECC71
+    }
+
+    .list-timeline.list-timeline-green-bright .list-timeline-item:before {
+      border-color: #2ECC71
+    }
   </style>
 </head>
 <body id="page-top">
@@ -403,6 +765,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
       <ul class="navbar-nav">
         <!--                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Client panel</a></li>-->
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">News</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#output">Reasons to join</a></li>
@@ -506,6 +869,95 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="container">
+  <!--    <h2 class="text-letter-spacing-xs my-0 font-weight-bold" style="color: #fff;">-->
+  <!--      Schedule-->
+  <!--    </h2>-->
+  <!--    <h1 class="feeds-title slide-in from-top" style="font-size: 3rem; width: 90%; color: #fff;"> Schedule&#128197;</h1>-->
+  <!--    <h1 class="feeds-title slide-in from-top" style="font-size: 3rem; width: 90%; margin: auto"> Schedule&#128293;</h1>-->
+  <!--    <p class="text-sm mt-0 mb-5">There's time and place for everything.</p>-->
+      <div class="row justify-content-center" style="margin-bottom: 7rem;">
+        <div id="schedule"></div>
+      </div>
+      <div class="row justify-content-center mt-5 mb-3">
+  <!--      <h1 class="best text-center text-white fade-in">REASONS</span></h1>-->
+        <h1 class="text-center text-white mb-5 slide-in from-right" style="font-size: 3rem;">
+         Schedule
+        </h1>
+      </div>
+      <!-- Days -->
+      <div class="row" style="justify-content: center;">
+        <div class="col-lg-4 mb-3 slide-in from-left" id="Friday, Nov 13th">
+          <h4 class="mt-0 mb-3 op-8" style="color: #fff; font-weight: 500;">
+            Saturday, <span>Nov 12th</span>
+          </h4>
+          <ul class="list-timeline list-timeline-primary">
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+              <p class="my-0 flex-fw text-sm"><span class="text-inverse op-8" style="color:#fff;">10:00 - 10:30</span> - Participants gathering</p>
+            </li>
+  <!--          <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-2">-->
+  <!--            <p class="my-0 flex-fw text-sm"><span class="text-primary font-weight-bold op-8 infinite animated flash" data-animate="flash" data-animate-infinite="1" data-animate-duration="3.5" style="animation-duration: 3.5s;">Now</span> - Vitaly Friedmann</p>-->
+  <!--            <p class="my-0 collapse flex-fw text-xs op-8 show" id="day-1-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>-->
+  <!--          </li>-->
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">10:45 - 11:00</span> - Welcome speech from organizers</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-4">Tell us about the company, tell us how to judge. </p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+              <p class="my-0 flex-fw text-sm"><span class="text-inverse op-8" style="color:#fff;">11:00 - 12:00</span> - Teams' self-presentation (+ideas). Find missing people (if any)</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column selected-timeline-item" data-toggle="collapse" data-target="#day-1-item-start">
+              <p class="my-0 flex-fw text-sm hover-zoom" style="color: #fff;"><span class="text-inverse op-8">12:00</span> - Development start</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-start">If you changed the initial idea presented earlier then please let organizers team know immediately. </p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-6">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">14:00</span> - Check Point #1: any issues you have</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-6">Ensure teams are doing things right: give them a checklist to align against</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-lunch">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">15:00 - 16:30</span> - Lunch</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-lunch">Hot dishes</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-point-2">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">19:00 - 20:00</span> - Check Point #2: any issues you have</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-point-2">Status, is there a problem etc.</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-dinner">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">21:00</span> - Dinner</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-dinner">Pizza & snacks</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-3 slide-in from-right" id="Saturday, Nov 14th">
+          <h4 class="mt-0 mb-3 op-8" style="color: #fff; font-weight: 500;">
+            Sunday, <span>Nov 13th</span>
+          </h4>
+          <ul class="list-timeline list-timeline-primary">
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-point-3">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">09:00 - 10:00</span> - Check Point #3</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-point-3">In case if you changed the initial idea/goal, then please ensure to inform organizers immediately. Otherwise that may affect your assessment.</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">12:00 - 13:30</span> - Development stops at 12:00!
+                Presenting results publicily (on a projector)</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-2">Team questionnaire about the equipment for the presentation. Tell us what we have and ask them if it is enough. Demo. Projector with two outputs, HDMI and Typey. From the phones demonstration to the team is primed itself (with emulator best). </p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-judging">
+              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">13:30 - 14:00</span> - Judging</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-judging">Team name, criteria, and rank. Google the table. To the jury went through the process. Scale from 1-10</p>
+            </li>
+            <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column selected-timeline-item" data-toggle="collapse" data-target="#day-2-item-4">
+              <p class="my-0 flex-fw text-sm hover-zoom" style="color: #fff;"><span class="text-inverse op-8">14:00</span> - Final results declaration and prizes</p>
+              <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-4">Awarding of prizes for winners (1-2-3 places) and gifts for all participants</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 <!--  <section class="powerful-features-section" style="padding-bottom: 220px">-->
   <section class="powerful-features-section">
     <div class="container">
@@ -656,9 +1108,8 @@
       <div class="row justify-content-center mt-5 mb-5    ">
         <h1 class="best text-center text-white fade-in">REASONS</span></h1>
         <h3 class="text-center text-white mb-5 slide-in from-right">
-          <!--                            style="margin-top: -115px;"-->
-          <!--                        >-->
-          <span>Reasons</span> to join</h3>
+          <span>Reasons</span> to join
+        </h3>
       </div>
       <!--                <div class="row justify-content-around">-->
       <!--                    <h3 class="text-white slide-in from-top incredible">-->
@@ -1029,8 +1480,9 @@
         }
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<!--  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/observers.js" defer></script>
 </body>
 </html>

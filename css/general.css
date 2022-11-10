@@ -321,11 +321,26 @@ cursor: pointer;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .powerful:after, .incredible:after, .best:after, .sniffer:after, .lifetime:after, .addons:after, .reviews:after {
     display: none;
   }
+
+  .best {
+    visibility: hidden;
+  }
 }
+
+@media (min-width: 1450px) {
+  .powerful:after, .incredible:after, .best:after, .sniffer:after, .lifetime:after, .addons:after, .reviews:after {
+    display: none;
+  }
+
+  .best {
+    visibility: hidden;
+  }
+}
+
 
 select option{
   background-color: #19191A;
