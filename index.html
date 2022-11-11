@@ -828,6 +828,66 @@
         width: 100%;
       }
     }
+
+    @-webkit-keyframes swing {
+      15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+      }
+      30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+      50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+      }
+      65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+      }
+      80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+    @keyframes swing {
+      15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+      }
+      30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+      50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+      }
+      65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+      }
+      80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+    .swing:hover
+    {
+      -webkit-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
   </style>
 </head>
 <body id="page-top">
@@ -952,17 +1012,10 @@
   </section>
   <section>
     <div class="container">
-  <!--    <h2 class="text-letter-spacing-xs my-0 font-weight-bold" style="color: #fff;">-->
-  <!--      Schedule-->
-  <!--    </h2>-->
-  <!--    <h1 class="feeds-title slide-in from-top" style="font-size: 3rem; width: 90%; color: #fff;"> Schedule&#128197;</h1>-->
-  <!--    <h1 class="feeds-title slide-in from-top" style="font-size: 3rem; width: 90%; margin: auto"> Schedule&#128293;</h1>-->
-  <!--    <p class="text-sm mt-0 mb-5">There's time and place for everything.</p>-->
       <div class="row justify-content-center" style="margin-bottom: 7rem;">
         <div id="schedule"></div>
       </div>
       <div class="row justify-content-center mt-5 mb-3">
-  <!--      <h1 class="best text-center text-white fade-in">REASONS</span></h1>-->
         <h1 class="text-center text-white mb-5 slide-in from-right" style="font-size: 3rem;">
          Schedule
         </h1>
@@ -975,37 +1028,42 @@
           </h4>
           <ul class="list-timeline list-timeline-primary">
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-              <p class="my-0 flex-fw text-sm"><span class="text-inverse op-8" style="color:#fff;">10:00 - 10:30</span> - Participants gathering</p>
+              <p class="my-0 flex-fw text-sm" style="font-size: 1.1rem;"><span class="text-inverse op-8" style="color:#fff;">10:00 - 10:30</span>
+                - Participants gathering
+              </p>
             </li>
   <!--          <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-2">-->
   <!--            <p class="my-0 flex-fw text-sm"><span class="text-primary font-weight-bold op-8 infinite animated flash" data-animate="flash" data-animate-infinite="1" data-animate-duration="3.5" style="animation-duration: 3.5s;">Now</span> - Vitaly Friedmann</p>-->
   <!--            <p class="my-0 collapse flex-fw text-xs op-8 show" id="day-1-item-2"> Talk: Wireframing / <span class="text-primary">Room 19</span> </p>-->
   <!--          </li>-->
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-4">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">10:45 - 11:00</span> - Welcome speech from organizers</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">10:45 - 11:00</span> - Welcome speech from organizers</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-4">Tell us about the company, tell us how to judge. </p>
             </li>
+<!--            <div class="square" data-mdb-toggle="animation" data-mdb-animation-start="onHover" data-mdb-animation="pulse" data-mdb-animation-reset="true" style="animation-duration: 500ms;">-->
+<!--              pulse-->
+<!--            </div>-->
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-              <p class="my-0 flex-fw text-sm"><span class="text-inverse op-8" style="color:#fff;">11:00 - 12:00</span> - Teams' self-presentation (+ideas). Find missing people (if any)</p>
+              <p class="my-0 flex-fw text-sm"  style="font-size: 1.1rem;"><span class="text-inverse op-8" style="color:#fff;">11:00 - 12:00</span> - Teams' self-presentation (+ideas). Find missing people (if any)</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column selected-timeline-item" data-toggle="collapse" data-target="#day-1-item-start">
-              <p class="my-0 flex-fw text-sm hover-zoom" style="color: #fff;"><span class="text-inverse op-8">12:00</span> - Development start</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing" style="color: #fff;"><span class="text-inverse op-8">12:00</span> - Development start</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-start">If you changed the initial idea presented earlier then please let organizers team know immediately. </p>
             </li>
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-6">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">14:00</span> - Check Point #1: any issues you have</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">14:00</span> - Check Point #1: any issues you have</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-6">Ensure teams are doing things right: give them a checklist to align against</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-lunch">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">15:00 - 16:30</span> - Lunch</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">15:00 - 16:30</span> - Lunch</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-lunch">Hot dishes</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-point-2">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">19:00 - 20:00</span> - Check Point #2: any issues you have</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">19:00 - 20:00</span> - Check Point #2: any issues you have</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-point-2">Status, is there a problem etc.</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-dinner">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">21:00</span> - Dinner</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">21:00</span> - Dinner</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-dinner">Pizza & snacks</p>
             </li>
           </ul>
@@ -1016,20 +1074,20 @@
           </h4>
           <ul class="list-timeline list-timeline-primary">
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-1-item-check-point-3">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">09:00 - 10:00</span> - Check Point #3</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">09:00 - 10:00</span> - Check Point #3</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-1-item-check-point-3">In case if you changed the initial idea/goal, then please ensure to inform organizers immediately. Otherwise that may affect your assessment.</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-2">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">12:00 - 13:30</span> - Development stops at 12:00!
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">12:00 - 13:30</span> - Development stops at 12:00!
                 Presenting results publicily (on a projector)</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-2">Team questionnaire about the equipment for the presentation. Tell us what we have and ask them if it is enough. Demo. Projector with two outputs, HDMI and Typey. From the phones demonstration to the team is primed itself (with emulator best). </p>
             </li>
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column" data-toggle="collapse" data-target="#day-2-item-judging">
-              <p class="my-0 flex-fw text-sm hover-zoom"><span class="text-inverse op-8" style="color:#fff;">13:30 - 14:00</span> - Judging</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing"><span class="text-inverse op-8" style="color:#fff;">13:30 - 14:00</span> - Judging</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-judging">Team name, criteria, and rank. Google the table. To the jury went through the process. Scale from 1-10</p>
             </li>
             <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column selected-timeline-item" data-toggle="collapse" data-target="#day-2-item-4">
-              <p class="my-0 flex-fw text-sm hover-zoom" style="color: #fff;"><span class="text-inverse op-8">14:00</span> - Final results declaration and prizes</p>
+              <p class="my-0 flex-fw text-sm hover-zoom swing" style="color: #fff;"><span class="text-inverse op-8">14:00</span> - Final results declaration and prizes</p>
               <p class="my-0 collapse flex-fw text-xs op-8" id="day-2-item-4">Awarding of prizes for winners (1-2-3 places) and gifts for all participants</p>
             </li>
           </ul>
