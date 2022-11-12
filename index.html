@@ -749,56 +749,6 @@
       border-color: #2ECC71
     }
 
-    /* Style the Image Used to Trigger the Modal */
-    #myImg {
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    /*#myImg:hover {opacity: 0.7;}*/
-
-    /* The Modal (background) */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-    }
-
-    /* Modal Content (Image) */
-    .modal-content {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-    }
-
-    /* Caption of Modal Image (Image Text) - Same Width as the Image */
-    #caption {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-      text-align: center;
-      color: #ccc;
-      padding: 10px 0;
-      height: 150px;
-    }
-
-    /* Add Animation - Zoom in the Modal */
-    .modal-content, #caption {
-      animation-name: zoom;
-      animation-duration: 0.6s;
-    }
-
     @keyframes zoom {
       from {transform:scale(0)}
       to {transform:scale(1)}
@@ -888,6 +838,52 @@
       -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1;
     }
+    .lightbox-carousel .carousel-inner {
+      width: 100%;
+    }
+
+    .photo-gallery {
+      color:#313437;
+      background-color:#fff;
+    }
+
+    .photo-gallery p {
+      color:#7d8285;
+    }
+
+    .photo-gallery h2 {
+      font-weight:bold;
+      margin-bottom:40px;
+      padding-top:40px;
+      color:inherit;
+    }
+
+    @media (max-width:767px) {
+      .photo-gallery h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px;
+      }
+    }
+
+    .photo-gallery .intro {
+      font-size:16px;
+      max-width:500px;
+      margin:0 auto 40px;
+    }
+
+    .photo-gallery .intro p {
+      margin-bottom:0;
+    }
+
+    .photo-gallery .photos {
+      padding-bottom:20px;
+    }
+
+    .photo-gallery .item {
+      padding-bottom:30px;
+    }
+
   </style>
 </head>
 <body id="page-top">
@@ -1096,7 +1092,6 @@
     </div>
   </section>
 
-
 <!--  <section class="powerful-features-section" style="padding-bottom: 220px">-->
   <section class="powerful-features-section" style="margin-bottom: 0px;">
     <div class="container">
@@ -1110,34 +1105,37 @@
               <h1 class="feeds-title slide-in from-top" style="font-size: 3rem; width: 90%; margin: auto"> Great news&#128293;</h1>
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" style="margin: auto">
-<!--                  <div class="carousel-item active" style="text-align: center;">-->
-<!--                    <div class="row featurette">-->
-<!--                      <div class="col-md-7" style="margin-top: 40px;">-->
-<!--                        <h4 class="text-white" style="font-weight: 500">We're ready to start announcing prizes for winners!</h4>-->
-<!--                        <div  style="color: #818186">-->
-<!--                          The winners (top three places) will be given a unique opportunity meeting with Digital Den Startup Accelerator representetive (<a href="https://digitalden.me" style="color: #f18606; text-decoration-color: #f18606; font-size: 1rem;">https://digitalden.me</a>) for arranging for the personal presentation date.-->
-<!--                          The winners will schedule a meeting to present their ideas face-to-face, with the option to sign up with DigitalDen to get their support to bring their ideas to life.-->
-<!--                        </div>                      </div>-->
-<!--                      <div class="col-md-5" style="margin-top: 40px;">-->
-<!--                          <img id="myImg" src="./assets/images/dashboard/hack-1.webp" style="width: 100%; border-radius: 0px; cursor: auto;"/>-->
-<!--&lt;!&ndash;                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>&ndash;&gt;-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
+                  <div class="carousel-item active" style="text-align: center;">
+                    <div class="row featurette">
+                      <div class="col-md-7" style="margin-top: auto; margin-bottom: auto;">
+                        <h4 class="text-white" style="font-weight: 500">FLS Hackathon has begun!</h4>
+                        <div  style="color: #818186">
+                          Teams have already presented their ideas  and started the process of creating projects.
+                        </div></div>
+                      <div class="col-md-5" style="margin-top: 40px;">
+                          <a href="./assets/img/IMG_5613.jpg" data-toggle="lightbox">
+                            <img src="./assets/img/IMG_5613.jpg" class="img-fluid">
+                          </a>
+<!--                          <img id="myImg" src="./assets/images/dashboard/hack-1.webp" data-toggle="lightbox" style="width: 100%; border-radius: 0px; cursor: auto;"/>-->
+                      </div>
+                    </div>
+                  </div>
 <!--                  <div class="carousel-item" style="text-align: center;">-->
 <!--                    <div class="row featurette">-->
 <!--                      <div class="col-md-5" style="margin-top: 40px;">-->
-<!--                        <img src="./assets/images/dashboard/hack-3.jpg" style="width: 100%;"/>-->
+<!--                        <img src="./assets/img/IMG_5614.jpg">-->
+<!--&lt;!&ndash;                             style="width: 100%;"/>&ndash;&gt;-->
 <!--                      </div>-->
 <!--                      <div class="col-md-7" style="margin-top: 40px;">-->
-<!--                        <h4 class="text-white" style="font-weight: 500">We're ready to start announcing our prizes for winners!</h4>-->
+<!--&lt;!&ndash;                        <h4 class="text-white" style="font-weight: 500">We're ready to start announcing our prizes for winners!</h4>&ndash;&gt;-->
 <!--                        <div  style="color: #818186">-->
-<!--                          The winners (top three places) will be given a unique opportunity meeting with Digital Den Startup Accelerator representetive (<a href="https://digitalden.me" style="color: #f18606; text-decoration-color: #f18606; font-size: 1rem;">https://digitalden.me</a>) for arranging for the personal presentation date.-->
+<!--                          <img src="./assets/img/IMG_5615.jpg">-->
+<!--                          &lt;!&ndash;                          The winners (top three places) will be given a unique opportunity meeting with Digital Den Startup Accelerator representetive (<a href="https://digitalden.me" style="color: #f18606; text-decoration-color: #f18606; font-size: 1rem;">https://digitalden.me</a>) for arranging for the personal presentation date.&ndash;&gt;-->
 <!--                        </div>-->
 <!--                      </div>-->
 <!--                    </div>-->
 <!--                  </div>-->
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <div class="feed d-flex pb-4 pt-5 align-items-center justify-content-between slide-in from-top">
                       <div class="feed-date col-lg-2"><span style="font-size: 2.6rem">19 Oct.</span></div>
                       <div class="feed-text">
@@ -1670,17 +1668,17 @@
     </section>
     <!-- Section: Links  -->
   </footer>
-  <div id="myModal" class="modal">
+<!--  <div id="myModal" class="modal">-->
 
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
+<!--    &lt;!&ndash; The Close Button &ndash;&gt;-->
+<!--    <span class="close">&times;</span>-->
 
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+<!--    &lt;!&ndash; Modal Content (The Image) &ndash;&gt;-->
+<!--    <img class="modal-content" id="img01">-->
 
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
-  </div>
+<!--    &lt;!&ndash; Modal Caption (Image Text) &ndash;&gt;-->
+<!--    <div id="caption"></div>-->
+<!--  </div>-->
   <script type="text/javascript">
     {
         document.onclick = function (event) {
@@ -1719,6 +1717,7 @@
 <!--  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
   <script src="./js/observers.js" defer></script>
 </body>
 </html>
