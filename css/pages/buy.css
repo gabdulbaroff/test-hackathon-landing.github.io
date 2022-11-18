@@ -10,8 +10,9 @@
   }
   
 
-.customer-cards-container {
-    overflow-x: scroll;
+.customers-section {
+    /*overflow-x: scroll;*/
+    overflow-x: hidden;
     margin-bottom: 8rem;
 }
 

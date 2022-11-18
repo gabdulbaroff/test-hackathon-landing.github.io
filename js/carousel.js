@@ -1,0 +1,1 @@
+$('.responsive').slick({dots:false,infinite:true,arrows:false,speed:2000,slidesToShow:3,slidesToScroll:1,centerMode:true,responsive:[{breakpoint:800,settings:{slidesToShow:2,slidesToScroll:1,centerMode:false,}},{breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1,centerMode:false,}}]});

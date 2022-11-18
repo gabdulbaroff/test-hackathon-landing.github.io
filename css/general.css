@@ -242,10 +242,10 @@ font-size: 0.9rem;
 
   .reviews:after {
     content: "REVIEWS";
-    opacity: 0.025;
+    opacity: 0.06;
     font-size: 9vw;
     position: absolute;
-    bottom: -180%;
+    bottom: -143%;
     left: 26%;
     z-index: -1;
     font-weight: 1000;

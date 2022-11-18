@@ -21,25 +21,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/almaz/Downloads/Telegram Desktop/litres/litres&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/almaz/OneDrive/Документы/fls/test-hackathon-landing.github.io/assets/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\assets\img" />
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io" />
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\js" />
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\assets\img" />
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\assets\images\dashboard" />
       <recent name="C:\Users\almaz\OneDrive\Документы\fls\test-hackathon-landing.github.io\1" />
@@ -74,7 +76,8 @@
       <workItem from="1668524553692" duration="14959000" />
       <workItem from="1668663269847" duration="4464000" />
       <workItem from="1668756791693" duration="3809000" />
-      <workItem from="1668776484041" duration="2680000" />
+      <workItem from="1668776484041" duration="5247000" />
+      <workItem from="1668790827308" duration="5730000" />
     </task>
     <servers />
   </component>
