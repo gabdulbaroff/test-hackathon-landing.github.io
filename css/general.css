@@ -165,10 +165,29 @@ font-size: 0.9rem;
   .form-select, .form-control {
     background: rgba(246, 246, 255, 0.06);
     border: 1px solid rgba(246, 246, 255, 0.23);
-  box-sizing: border-box;
-  border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 
+  .form-control {
+    color: #fff;
+    margin-bottom: 20px;
+    min-width: 280px;
+  }
+
+  .form-group > label {
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .form-check {
+    margin-bottom: 5px;
+  }
+
+  .form-check-input:checked {
+    background-color: #f18606;
+    border-color: #f18606;
+  }
 
   .powerful, .incredible, .best, .sniffer, .lifetime, .addons, .reviews {
     position: relative;
@@ -241,7 +260,7 @@ font-size: 0.9rem;
   }
 
   .reviews:after {
-    content: "REVIEWS";
+    content: "FEEDBACK";
     opacity: 0.06;
     font-size: 9vw;
     position: absolute;
