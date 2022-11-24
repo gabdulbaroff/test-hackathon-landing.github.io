@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/site.webmanifest">
   <link rel="mask-icon" href="https://firstlinesoftware.com/wp-content/themes/base/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
@@ -910,11 +911,12 @@
           </div>
           <div class="row mb-sm">
             <div class="col-md-12">
-              <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+              <div class="g-recaptcha" style="margin-bottom: 10px;" data-sitekey="6LciAjAjAAAAANFBxdM00fS7sqWd44arCQb1qjwQ" data-callback="enableBtn"></div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
-      </form>
+<!--          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>-->
+          <input class="btn btn-primary" style="width: 100%;" type="submit" value="Submit" id="button1" disabled>
+        </form>
       </div>
     </div>
   </section>
@@ -1035,7 +1037,6 @@
       });
     }
   </script>
-<!--  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
@@ -1052,22 +1053,27 @@
           checkbox1 = document.querySelector(".checkbox1");
       console.log("email = ", email.value);
 
-      // Email.send({
-      //   Host : "smtp.elasticemail.com",
-      //   Username : "flsHackathonMontenegro@gmail.com",
-      //   Password : "D8539E8150028B1AD93BAAA54C9C60748074",
-      //   To : 'almaz080469@yandex.ru',
-      //   From : email.value,
-      //   Subject : "This is the subject",
-      //   Body : "And this is the body"
-      // }).then(
-      //         message => alert(message)
-      // );
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "almaz0804692505@gmail.com",
+        Password : "B742A8B77AFF2535DF2AC1E047217E6CB222",
+        To : 'almaz0804692505@gmail.com',
+        From : email.value,
+        Subject : `${name} want to get in touch about new hackathons!`,
+        Body : `Name: ${name} </br>
+                Email: ${email}.`
+      }).then(
+              message => alert(message)
+      );
     }
 
     form.addEventListener("submit", sendMsg)
 
   </script>
-  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  <script type="text/javascript">
+    function enableBtn() {
+      document.getElementById("button1").disabled = false;
+    }
+  </script>
 </body>
 </html>
