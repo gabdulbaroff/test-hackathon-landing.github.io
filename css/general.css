@@ -207,15 +207,6 @@ font-size: 0.9rem;
   }
 
   .incredible:after {
-    /*content: "ABOUT";*/
-    /*content: "IDEAS";*/
-    /*opacity: 0.06;*/
-    /*font-size: 10vw;*/
-    /*position: relative;*/
-    /*left: -350px;*/
-    /*top: 39px;*/
-    /*z-index: -1;*/
-    /*font-weight: 1000;*/
   }
 
   .best {
@@ -307,27 +298,14 @@ cursor: pointer;
   .navbar {
     margin-top: 0px;
     background: #000;
-    /*transition: background 2s, opacity 2s;*/
-    /*background: #19191A;*/
   }
   nav {
-    /*opacity: 0.9;*/
   }
 
   nav:has(div.show) {
     background: #131313;
-    /*background: #262627;*/
-    /*background: #000;*/
-    /*opacity: 0.9;*/
-    /*background: #19191A;*/
-    /*background: #f18606;*/
     transition: background 2s, opacity 2s;
-    /*color: #fff;*/
-    /*transition: width 2s, height 2s, background 2s, transform 2s;*/
   }
-  /*div.show .navbar-dark .navbar-nav .nav-link {*/
-  /*  color: #fff !important;*/
-  /*}*/
 
   .navbar-collapse {
     padding-bottom: 10px;
