@@ -1062,9 +1062,10 @@
         Subject : `${name.value} want to get in touch about new hackathons!`,
         Body : `Name: ${name.value} </br>,
                 Email: ${email.value}.`
-      }).then(
-              message => alert(message)
-      );
+      })
+      //         .then(
+      //         message => alert(message)
+      // );
     }
 
     form.addEventListener("submit", sendMsg)
