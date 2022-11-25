@@ -23,6 +23,47 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
   <style>
+    .gallery {
+      display: grid;
+      grid-gap: 8px;
+      grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+      grid-auto-rows: 8px;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perpective: 1000;
+    }
+
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(30%,1fr));
+      }
+    }
+
+    @media (max-width: 400px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
+      }
+    }
+    img{
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 16px #333;
+    }
+    .content{
+      padding: 4px;
+    }
+    .gallery-item {
+      transition: grid-row-start 300ms linear;
+      transition: transform 300ms ease;
+      cursor: pointer;
+    }
+    .gallery-item:hover {
+      transform: scale(1.025);
+    }
+    .gallery-item img:hover{
+      box-shadow: 0 0 32px #333;
+    }
   </style>
 </head>
 <body id="page-top">
@@ -110,9 +151,7 @@
           What was it like?
         </h1>
       </div>
-      <div class="row" style="justify-content: center;">
-        <div class="gallery" id="gallery">
-<!--          <a href="./assets/img/IMG-0002-min.JPG" data-toggle="lightbox">-->
+      <div class="gallery" id="gallery">
           <div class="gallery-item">
 <!--            <a href="./assets/img/IMG-0002-min.JPG" data-toggle="lightbox">-->
             <div class="content">
@@ -219,9 +258,6 @@
               </a>
             </div>
           </div>
-        </div>
-<!--        <video src="./assets/img/HackathonVideo.mp4" type="video/mp4" loop class="hover-to-play w-100">-->
-<!--        </video>-->
       </div>
       <div
               class="ratio ratio-16x9"
@@ -1012,30 +1048,20 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
   <script type="text/javascript">
-    {
-      var gallery = document.querySelector('#gallery');
-      var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-      var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-      var resizeAll = function () {
-        var altura = getVal(gallery, 'grid-auto-rows');
-        var gap = getVal(gallery, 'grid-row-gap');
-        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-          var el = item;
-          el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-        });
-      };
-      gallery.querySelectorAll('img').forEach(function (item) {
-        item.classList.add('byebye');
-          item.addEventListener('load', function () {
+    const gallery = document.querySelector('.gallery');
+    const getVal = (elem, style) => parseInt(window.getComputedStyle(elem).getPropertyValue(style));
+    const getHeight = (item) => item.querySelector('.content').getBoundingClientRect().height;
 
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-          });
+    const resizeAll = () => {
+      const altura = getVal(gallery, 'grid-auto-rows');
+      const separacion = getVal(gallery, 'grid-row-gap');
+      gallery.querySelectorAll('.gallery-item').forEach(item => {
+        item.style.gridRowEnd = `span ${Math.ceil((getHeight(item) + separacion) / (altura + separacion))}`;
       });
     }
+
+    window.addEventListener('load', resizeAll);
+    window.addEventListener('resize', resizeAll);
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
