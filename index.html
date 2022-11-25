@@ -64,6 +64,118 @@
     .gallery-item img:hover{
       box-shadow: 0 0 32px #333;
     }
+
+    #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+    #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+    #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+    #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+    #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+    #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+      grid-row-end: span 13;
+    }
+
+    #gallery-img-2 {
+      grid-row-end: span 18;
+    }
+
+    #gallery-img-9, #gallery-img-17 {
+      grid-row-end: span 26;
+    }
+
+    @media (max-width: 1050px) {
+      #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+      #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+      #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+      #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+      #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+      #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+        grid-row-end: span 14;
+      }
+
+      #gallery-img-2 {
+        grid-row-end: span 20;
+      }
+
+      #gallery-img-9, #gallery-img-17 {
+        grid-row-end: span 30;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+      #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+      #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+      #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+      #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+      #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+        grid-row-end: span 15;
+      }
+
+      #gallery-img-2 {
+        grid-row-end: span 23;
+      }
+
+      #gallery-img-9, #gallery-img-17 {
+        grid-row-end: span 33;
+      }
+    }
+
+    @media (max-width: 770px) {
+      #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+      #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+      #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+      #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+      #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+      #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+        grid-row-end: span 12;
+      }
+
+      #gallery-img-2 {
+        grid-row-end: span 17;
+      }
+
+      #gallery-img-9, #gallery-img-17 {
+        grid-row-end: span 25;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+      #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+      #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+      #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+      #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+      #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+        grid-row-end: span 8;
+      }
+
+      #gallery-img-2 {
+        grid-row-end: span 12;
+      }
+
+      #gallery-img-9, #gallery-img-17 {
+        grid-row-end: span 17;
+      }
+    }
+
+    @media (max-width: 400px) {
+      #gallery-img-1, #gallery-img-3, #gallery-img-4, #gallery-img-5,
+      #gallery-img-6, #gallery-img-7, #gallery-img-8, #gallery-img-10,
+      #gallery-img-11, #gallery-img-12, #gallery-img-13, #gallery-img-14,
+      #gallery-img-15, #gallery-img-16, #gallery-img-18, #gallery-img-19,
+      #gallery-img-20, #gallery-img-21, #gallery-img-22, #gallery-img-23,
+      #gallery-img-24, #gallery-img-25, #gallery-img-26 {
+        grid-row-end: span 16;
+      }
+
+      #gallery-img-2 {
+        grid-row-end: span 24;
+      }
+
+      #gallery-img-9, #gallery-img-17 {
+        grid-row-end: span 35;
+      }
+    }
   </style>
 </head>
 <body id="page-top">
@@ -152,112 +264,187 @@
         </h1>
       </div>
       <div class="gallery" id="gallery">
-          <div class="gallery-item">
-<!--            <a href="./assets/img/IMG-0002-min.JPG" data-toggle="lightbox">-->
-            <div class="content">
-              <a href="./assets/img/IMG-0002-min.JPG" data-toggle="lightbox">
-                <img class="lazyload" src="./assets/img/IMG-0002-min.JPG" alt="">
-              </a>
-            </div>
+        <div id="gallery-img-1" class="gallery-item" >
+          <div class="content">
+            <a href="./assets/img/IMG-0002-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0002-min.JPG" alt="">
+            </a>
           </div>
-<!--          </a>-->
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0003-min.JPG" data-toggle="lightbox">
-                <img class="lazyload" src="./assets/img/IMG-0003-min.JPG" alt=""></a>
-            </div>
+        </div>
+        <div id="gallery-img-2" class="gallery-item" >
+          <div class="content">
+            <a href="./assets/img/IMG-0003-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0003-min.JPG" alt=""></a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0004-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-3" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0004-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0004-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0005-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-4" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0005-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0005-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0006-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-5" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0006-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0006-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0007-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-6" class="gallery-item" >
+          <div class="content">
+            <a href="./assets/img/IMG-0007-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0007-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0008-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-7" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0008-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0008-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0009-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-8" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0009-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0009-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0010-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-9" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0010-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0010-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0011-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-10" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0011-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0011-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0013-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-11" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0013-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0013-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0016-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-12" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0016-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0016-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0017-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-13" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0017-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0017-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0018-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-14" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0018-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0018-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
-          <div class="gallery-item">
-            <div class="content">
-              <a href="./assets/img/IMG-0019-min.JPG" data-toggle="lightbox">
+        </div>
+        <div id="gallery-img-15" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0019-min.JPG" data-toggle="lightbox">
               <img class="lazyload" src="./assets/img/IMG-0019-min.JPG" alt="">
-              </a>
-            </div>
+            </a>
           </div>
+        </div>
+        <div id="gallery-img-16" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0020-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0020-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-17" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0021-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0021-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-18" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0022-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0022-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-19" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0023-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0023-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-20" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0024-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0024-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-21" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0025-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0025-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-22" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0026-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0026-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-23" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0027-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0027-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-24" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0028-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0028-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-25" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0029-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0029-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
+        <div id="gallery-img-26" class="gallery-item">
+          <div class="content">
+            <a href="./assets/img/IMG-0030-min.JPG" data-toggle="lightbox">
+              <img class="lazyload" src="./assets/img/IMG-0030-min.JPG" alt="">
+            </a>
+          </div>
+        </div>
       </div>
       <div
               class="ratio ratio-16x9"
@@ -1047,23 +1234,23 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-  <script type="text/javascript">
-    const gallery = document.querySelector('.gallery');
-    const getVal = (elem, style) => parseInt(window.getComputedStyle(elem).getPropertyValue(style));
-    const getHeight = (item) => item.querySelector('.content').getBoundingClientRect().height;
+<!--  <script type="text/javascript">-->
+<!--    const gallery = document.querySelector('.gallery');-->
+<!--    const getVal = (elem, style) => parseInt(window.getComputedStyle(elem).getPropertyValue(style));-->
+<!--    const getHeight = (item) => item.querySelector('.content').getBoundingClientRect().height;-->
 
-    const resizeAll = () => {
-      const altura = getVal(gallery, 'grid-auto-rows');
-      const separacion = getVal(gallery, 'grid-row-gap');
+<!--    const resizeAll = () => {-->
+<!--      const altura = getVal(gallery, 'grid-auto-rows');-->
+<!--      const separacion = getVal(gallery, 'grid-row-gap');-->
 
-      gallery.querySelectorAll('.gallery-item').forEach(item => {
-        item.style.gridRowEnd = `span ${Math.ceil((getHeight(item) + separacion) / (altura + separacion))}`;
-      });
-    }
+<!--      gallery.querySelectorAll('.gallery-item').forEach(item => {-->
+<!--        item.style.gridRowEnd = `span ${Math.ceil((getHeight(item) + separacion) / (altura + separacion))}`;-->
+<!--      });-->
+<!--    }-->
 
-    window.addEventListener('load', resizeAll);
-    // window.addEventListener('resize', resizeAll);
-  </script>
+<!--    window.addEventListener('load', resizeAll);-->
+<!--    window.addEventListener('resize', resizeAll);-->
+<!--  </script>-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
